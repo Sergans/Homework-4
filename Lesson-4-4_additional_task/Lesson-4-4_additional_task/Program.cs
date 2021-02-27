@@ -10,12 +10,12 @@ namespace Lesson_4_4_additional_task
     {
         static void Main(string[] args)
         {
-            //Набросок
-            Console.WriteLine("Введите значение");
+            
+            Console.WriteLine("Введите значение последовательности Фибонначи,чтобы получить число");
             int n = Convert.ToInt32(Console.ReadLine());
-            int[] f = new int[n];
 
-            Console.WriteLine(Fibbo(n));
+
+            Console.WriteLine($"Число из последовательности:{Fibbo(n)}");
         }
         static int Fibbo(int n)
         {
