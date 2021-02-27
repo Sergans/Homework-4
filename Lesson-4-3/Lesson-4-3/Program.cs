@@ -14,6 +14,7 @@ namespace Lesson_4_3
         }
         static void Main(string[] args)
         {
+            int month;
             do
             {
 
@@ -25,6 +26,8 @@ namespace Lesson_4_3
                 }
 
             } while (month > 12 || month < 0);
+            //Основной блок с методами
+            Console.WriteLine((SeasonPeriodRus(SeasonPeriod(month))));
 
         }
         //Метод 1
@@ -51,7 +54,7 @@ namespace Lesson_4_3
             return a;
 
         }
-        //Метод без второго перечисления
+        //Метод 2, без второго перечисления
         static string SeasonPeriodRus(int SeasonPeriod)
         {
             string a = "";
